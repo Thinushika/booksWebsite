@@ -1,7 +1,14 @@
-import '../styles/globals.css'
+import Structure from "../components";
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Structure>
+        <Component {...pageProps} />
+      </Structure>
+    </>
+  );
 }
 
-export default MyApp
+export default MyApp;
